@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "myblog-ee747": {
+      "hosting": {
+        "blog": [
+          "myblog-ee747"
+        ]
+      }
+    }
+  }
+}
