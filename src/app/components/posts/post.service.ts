@@ -10,6 +10,7 @@ import { PostI } from "../../shared/models/post.interface";
 export class PostService {
   constructor(private afs: AngularFirestore) {}
 
+  // recuperar todos los posts
   public getAllPosts(): Observable<PostI[]> {
     return this.afs
       .collection("posts")
@@ -23,5 +24,11 @@ export class PostService {
           })
         )
       );
+  }
+
+  // buscara en la Base Datos y filtra por id indicado
+  public getOnePost(id:PostI):Observable<PostI>{
+    return this.afs.doc<PostI>(`posts/${id}`).valueChanges();
+
   }
 }
