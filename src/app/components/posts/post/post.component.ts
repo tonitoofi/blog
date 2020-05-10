@@ -27,7 +27,9 @@ export class PostComponent implements OnInit {
   constructor(private route: ActivatedRoute, private postSvc: PostService) {}
 
   ngOnInit() {
+    // recuperando id
     const idPost = this.route.snapshot.params.id;
+    // recuperando post por id
     this.post$ = this.postSvc.getOnePost(idPost);
   }
 }

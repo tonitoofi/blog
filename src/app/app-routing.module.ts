@@ -18,6 +18,8 @@ const routes: Routes = [
         (m) => m.AboutModule
       ),
   },
+  { path: 'admin', loadChildren: () => import('./components/admin/admin.module').then(m => m.AdminModule) },
+  { path: 'login', loadChildren: () => import('./components/login/login.module').then(m => m.LoginModule) },
   // {
   //   path: "posts",
   //   loadChildren: () =>
