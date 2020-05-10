@@ -9,7 +9,9 @@ import {
   MatListModule,
   MatProgressSpinnerModule,
   MatDividerModule,
-  MatChipsModule
+  MatChipsModule,
+  MatFormFieldModule,
+  MatInputModule
 } from "@angular/material";
 // import { ToolbarComponent } from './shared/components/toolbar/toolbar.component';
 
@@ -22,7 +24,9 @@ const myModule = [
   MatListModule,
   MatProgressSpinnerModule,
   MatDividerModule,
-  MatChipsModule
+  MatChipsModule,
+  MatInputModule,
+  MatFormFieldModule
 ];
 
 @NgModule({
