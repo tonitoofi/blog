@@ -4,7 +4,6 @@ import { PostComponent } from "./components/posts/post/post.component";
 import { ContainerAppComponent } from "./components/pages/container-app/container-app.component";
 
 const routes: Routes = [
-  // ruta base (127.0.0.1 redirecciona a .../home)
   {
     path: "",
     component: ContainerAppComponent,
@@ -18,6 +17,7 @@ const routes: Routes = [
       },
 
       { path: "post/:id", component: PostComponent },
+      // ruta base (127.0.0.1 redirecciona a .../home)
       {
         path: "about",
         loadChildren: () =>
@@ -39,6 +39,8 @@ const routes: Routes = [
     loadChildren: () =>
       import("./components/login/login.module").then((m) => m.LoginModule),
   },
+
+  
   // {
   //   path: "posts",
   //   loadChildren: () =>

@@ -11,7 +11,8 @@ import {
   MatDividerModule,
   MatChipsModule,
   MatFormFieldModule,
-  MatInputModule
+  MatInputModule,
+  MatIconModule
 } from "@angular/material";
 // import { ToolbarComponent } from './shared/components/toolbar/toolbar.component';
 
@@ -26,7 +27,8 @@ const myModule = [
   MatDividerModule,
   MatChipsModule,
   MatInputModule,
-  MatFormFieldModule
+  MatFormFieldModule,
+  MatIconModule
 ];
 
 @NgModule({
