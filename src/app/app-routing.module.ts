@@ -3,6 +3,7 @@ import { Routes, RouterModule } from "@angular/router";
 import { PostComponent } from "./components/posts/post/post.component";
 
 const routes: Routes = [
+  // ruta base (127.0.0.1 redirecciona a .../home)
   { path: "", redirectTo: "/home", pathMatch: "full" },
   {
     path: "home",
