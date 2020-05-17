@@ -13,7 +13,8 @@ import {
   MatFormFieldModule,
   MatInputModule,
   MatIconModule,
-  MatTableModule
+  MatTableModule,
+  MatPaginatorModule
 } from "@angular/material";
 
 
@@ -32,7 +33,8 @@ const myModule = [
   MatInputModule,
   MatFormFieldModule,
   MatIconModule,
-  MatTableModule
+  MatTableModule,
+  MatPaginatorModule
 ];
 
 @NgModule({
