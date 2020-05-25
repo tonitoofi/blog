@@ -15,7 +15,8 @@ import {
   MatIconModule,
   MatTableModule,
   MatPaginatorModule,
-  MatSortModule
+  MatSortModule,
+  MatDialogModule
 } from "@angular/material";
 
 
@@ -36,7 +37,8 @@ const myModule = [
   MatIconModule,
   MatTableModule,
   MatPaginatorModule,
-  MatSortModule
+  MatSortModule,
+  MatDialogModule
 ];
 
 @NgModule({
